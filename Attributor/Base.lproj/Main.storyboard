@@ -88,7 +88,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="CS193p Rocks!" id="Nxz-y4-pkf" userLabel="ddd">
-                        <barButtonItem key="rightBarButtonItem" title="Stats" id="H0K-oF-mpR"/>
+                        <barButtonItem key="rightBarButtonItem" title="Stats" id="H0K-oF-mpR">
+                            <connections>
+                                <segue destination="67l-gL-KsM" kind="show" identifier="Analyze Text" id="M6S-ko-DK7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="body" destination="Rt3-Oe-cUL" id="EAU-yD-fQv"/>
@@ -108,14 +112,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 colorful characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fc-TN-Qga">
-                                <rect key="frame" x="20" y="133" width="159" height="21"/>
+                                <rect key="frame" x="20" y="133" width="374" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 outlined characters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvW-HJ-WRC">
-                                <rect key="frame" x="20" y="162" width="163" height="21"/>
+                                <rect key="frame" x="20" y="162" width="374" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -132,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7HI-n5-Nhj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1312" y="-173"/>
+            <point key="canvasLocation" x="737.68115942028987" y="-173.4375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cXg-mB-NCf">
